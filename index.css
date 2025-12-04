@@ -15,10 +15,10 @@ a {
 }
 h1, h2, h3 {
     font-weight: 700;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Helvetica', 'Arial', sans-serif;
 }
 p, a {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Helvetica', 'Arial', sans-serif;
 }
 .nav-bar {
     display: flex;
@@ -44,7 +44,7 @@ img {
     padding: 0%;
     border: none;
     border-radius: 5px;
-    margin-right: 5;
+    margin-right: 5px;
 }
 .hero-model-3 {
     display: flex;
@@ -282,12 +282,76 @@ display: flex;
 width: 100%;
 justify-content: center;
 margin-top: 25px;
+flex-direction: column;
 }
 .map-elm {
-    width: 95%;
+    width: 100%;
+    max-width: 95%;
+    margin: 0 auto;
 }
 .map-elm iframe {
     width: 100%;
     height: 550px;
     border-radius: 10px;
+}
+.map-desc-left {
+    margin: 5px 0 5px 75px;
+}
+.map-desc-left h3 {
+    font-size: 5vh;
+    margin-bottom: 0px;
+}
+.map-desc-left p {
+    font-size: 2vh;
+    color: #444444;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+.mt-d {
+    display: flex;
+    gap: 10px;
+}
+.mt-d a {
+    width: 150px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.mt-d a.mt-1 {
+    background-color: #111111;
+    color: #ffffff;
+}
+
+.mt-d a.mt-2 {
+    background-color: #ebebeb;
+    color: #000000;
+}
+.mt-d .mt-1:hover {
+    background-color: #222222;
+}
+.mt-d .mt-2:hover {
+    background-color: #cdcdcd;
+}
+.chargers img {
+    max-width: 50px;
+}
+.map-desc {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 100px;
+}
+.chargers {
+    margin-top: 40px;
+    display: flex;
+    gap: 70px;
+    font-size: 2.2vh;
+    color: #333333;
+}
+.chargers img {
+    margin-left: 60%;
 }
