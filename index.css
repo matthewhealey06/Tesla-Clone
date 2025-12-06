@@ -1,7 +1,9 @@
 body {
     margin: 0;
     padding: 0;
-    padding-bottom: 200px;
+}
+main {
+    padding-bottom: 150px;
 }
 .hero-btn1:hover, .o-n:hover {
     background: #3039b4;
@@ -25,26 +27,67 @@ p, a {
     justify-content: space-between;
     margin: 12.5px;
     align-items: center;
-}
-img {
-    display: block;
-    width: 100%;
+    height: 60px;
+    margin: 0 40px 0 50px;
 }
 .tesla-logo {
     display: block;
     width: 120px;
     height: auto;
-    margin-left: 30px;
-
+}
+button {
+    border: none;
+    padding: 0%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+.hdr-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 30px;
+}
+.hdr-center button {
+    font-weight: 600;
+}
+.hdr-right {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 20px;
+}
+.right .hdr-right img, .hdr-right svg{
+    height: 20px;
+    width: 20px;
+    margin: 0;
 }
 .menu {
-    cursor: pointer;
     width: 75px;
     height: 30px;
-    padding: 0%;
-    border: none;
     border-radius: 5px;
     margin-right: 5px;
+    background-color: #eeeeee;
+}
+@media (min-width:1000px) {
+    .menu {
+        display: none;
+    }
+}
+@media (max-width:999px) {
+    .hdr-center button, .hdr-right {
+        display: none;
+    }
+    .nav-bar {
+        margin-right: 10px;
+    }
+}
+main img {
+    display: block;
+    width: 100%;
 }
 .hero-model-3 {
     display: flex;
@@ -67,10 +110,10 @@ h2, .p2, .p1 {
     color: #ffffff;
     font-weight: bold;
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .p2 a {
     color: inherit;
+    text-decoration: underline;
 }
 h2 {
     font-size: 5.5vh;
@@ -354,4 +397,28 @@ flex-direction: column;
 }
 .chargers img {
     margin-left: 60%;
+}
+@media (max-width:999px) {
+    .map-desc {
+        flex-direction: column;
+    }
+    .chargers {
+        margin-left: 10%;
+    }
+    .chargers img {
+        max-width: 40px;
+    }
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.3vh;
+    padding-bottom: 25px;
+}
+footer a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #444444;
+    font-weight: 500;
 }
